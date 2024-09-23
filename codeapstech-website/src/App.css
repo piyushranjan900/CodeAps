@@ -1,0 +1,21 @@
+/* src/App.css */
+.app {
+  
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%; /* Ensure full width */
+}
+
+/* Main Content Area */
+.content {
+  
+  padding: 2rem; /* Add some padding for spacing */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0; /* Reset margin for mobile */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
