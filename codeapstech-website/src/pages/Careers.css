@@ -1,0 +1,69 @@
+/* src/pages/Careers.css */
+.careers {
+    padding: 50px;
+    margin-left: 250px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .careers h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .careers p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .job {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .job h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .job p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .job a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .job a:hover {
+    text-decoration: underline;
+  }
+  
+  .company-culture {
+    margin-top: 40px;
+  }
+  
+  .company-culture h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .company-culture p {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .careers {
+      margin-left: 0;
+    }
+  }
+  
