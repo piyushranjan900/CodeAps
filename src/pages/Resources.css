@@ -1,0 +1,91 @@
+/* src/pages/Resources.css */
+.resources {
+    padding: 50px;
+    margin-left: 250px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .resources h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .resources p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .resource-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .resource {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .resource h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .resource p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .resource a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resource a:hover {
+    text-decoration: underline;
+  }
+  
+  .industry-reports {
+    text-align: center;
+  }
+  
+  .industry-reports h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .industry-reports p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .industry-reports a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .industry-reports a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .resources {
+      margin-left: 0;
+    }
+  
+    .resource-items {
+      flex-direction: column;
+    }
+  
+    .resource {
+      flex: 1 1 100%;
+    }
+  }
+  
