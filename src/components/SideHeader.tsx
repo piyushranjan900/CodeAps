@@ -28,14 +28,14 @@ const SideHeader: React.FC = () => {
     <>
       {/* Fixed header for mobile and desktop */}
       <header className="header">
-      <div className="header-container">
-    {/* Logo and company name with homepage link */}
-    <h1 className="logo">
-      <a href="./pages/Home" className="logo-link">
-        <img src={comlogo} alt="AspenCask Logo" className="logo-img" />
-        <span className="company-name">AspenCask</span>
-      </a>
-    </h1>
+        <div className="header-container">
+          {/* Logo and company name with homepage link */}
+          <h1 className="logo">
+            <Link to="/" className="logo-link" onClick={closeMenu}>
+              <img src={comlogo} alt="AspenCask Logo" className="logo-img" />
+              <span className="company-name">AspenCask</span>
+            </Link>
+          </h1>
 
           {/* Navigation Links */}
           <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
@@ -85,7 +85,6 @@ const SideHeader: React.FC = () => {
                   Contact
                 </Link>
               </li>
-    
             </ul>
           </nav>
 
