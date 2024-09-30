@@ -1,0 +1,90 @@
+.footer {
+    background-color: #210c0c; /* Light gray background */
+    color: #e8dddd; /* Dark gray text */
+    padding: 40px 20px; /* Padding around the footer */
+    text-align: center; /* Center text for logo */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 1200px; /* Maximum width for the footer */
+    margin: 0 auto; /* Center footer in the container */
+}
+
+.footer-logo {
+    margin-bottom: 20px; /* Space between logo and columns */
+}
+
+.footer-logo img {
+    max-width: 150px; /* Responsive logo size */
+}
+
+.footer-columns {
+    display: flex; /* Use flexbox for columns */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Space between columns */
+}
+
+.footer-column {
+    flex: 1; /* Allow columns to grow */
+    min-width: 150px; /* Minimum width for columns */
+    margin-bottom: 20px; /* Space between rows */
+    text-align: left; /* Align text to the left */
+}
+
+.footer h4 {
+    font-size: 1.2em; /* Font size for headings */
+    margin-bottom: 15px; /* Space below headings */
+    color: #7a7171; /* Darker color for headings */
+}
+
+.footer p, .footer a {
+    font-size: 0.9em; /* Font size for paragraphs and links */
+    color: #666; /* Gray color for text */
+    margin-bottom: 10px; /* Space below text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-column li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-column a {
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-column a:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-columns {
+        overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+    
+    .footer h4 {
+        text-align: center; /* Center headings on smaller screens */
+    }
+    
+    .footer p, .footer a {
+        font-size: 0.85em; /* Smaller font size on smaller screens */
+    }
+}
+.footer-logo img {
+    width: 60px; /* Adjust size */
+    height: 60px; /* Make height equal to width for a circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image fits within the circle */
+  }

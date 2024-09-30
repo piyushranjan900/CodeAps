@@ -1,0 +1,319 @@
+/* Hero Section */
+.portfolio-hero-section {
+    position: relative;
+    background: url('webback.avif') no-repeat center center/cover;
+    min-height: 60vh; /* Use min-height to avoid hiding content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px; /* Add padding to prevent content from being cut off */
+  }
+  
+  .portfolio-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .portfolio-hero-content {
+    z-index: 2;
+  }
+  
+  .portfolio-hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-hero-section h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .portfolio-hero-section h1:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .portfolio-hero-section h1:hover {
+    text-shadow: 4px 6px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .portfolio-hero-section p {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-hero-section p:hover {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+  }
+  
+  /* Project Grid */
+/* General Section Styles */
+.completed-projects-section, .in-progress-projects-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    margin: 10px auto;
+    border-radius: 50px;
+  }
+  
+  .portfolio-project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .portfolio-project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+  }
+  
+  .portfolio-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-project-card:hover .portfolio-project-image {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-project-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .portfolio-project-info h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .portfolio-project-info h3::before {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ff7e5f;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+  .portfolio-project-card:hover h3::before {
+    width: 60px;
+    left: calc(50% - 30px);
+  }
+  
+  .portfolio-project-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .portfolio-project-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Hover Overlay Effect */
+  .portfolio-project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 123, 255, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+  }
+  
+  .portfolio-project-card:hover::before {
+    opacity: 1;
+  }
+  
+  .portfolio-project-info {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .portfolio-project-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .portfolio-project-info h3 {
+      font-size: 1.4rem;
+    }
+  
+    .portfolio-project-info p {
+      font-size: 0.9rem;
+    }
+  
+    .portfolio-project-link {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Additional Mobile Optimizations */
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .portfolio-project-info h3 {
+      font-size: 1.3rem;
+    }
+  
+    .portfolio-project-info p {
+      font-size: 0.85rem;
+    }
+  
+    .portfolio-project-link {
+      padding: 7px 14px;
+      font-size: 0.85rem;
+    }
+  }
+  
+  
+  /* Call to Action Section */
+  .portfolio-cta-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .portfolio-cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-cta-button {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(90deg, #007BFF, #00c6ff);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-cta-button:hover {
+    background: linear-gradient(90deg, #0056b3, #007BFF);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  /* Full width */
+  .portfolio-page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 992px) {
+    .portfolio-hero-section h1 {
+      font-size: 3rem;
+    }
+    .portfolio-cta-button {
+      font-size: 1rem;
+      padding: 0.8rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-hero-section {
+      height: 45vh;
+    }
+    .portfolio-hero-section h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .portfolio-hero-section {
+      height: 40vh;
+    }
+    .portfolio-hero-section h1 {
+      font-size: 2rem;
+    }
+  }
+  

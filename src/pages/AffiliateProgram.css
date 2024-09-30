@@ -1,0 +1,62 @@
+/* AffiliateProgram.css */
+
+.affiliate-program-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    position: relative;
+    background: url('back.jpg') no-repeat center center/cover; /* Replace with your image URL */
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .no-affiliate-message {
+    padding: 20px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .no-affiliate-message h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .no-affiliate-message p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  

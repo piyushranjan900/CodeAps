@@ -1,0 +1,120 @@
+.footer {
+    background-color: #210c0c;
+    color: #e8dddd;
+    padding: 40px 20px;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    width: 60px; /* Adjust size for mobile */
+    height: 60px; /* Maintain circular shape */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to fit smaller screens */
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #7a7171;
+}
+
+.footer p, .footer a {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .footer-columns {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center align the columns */
+    }
+
+    .footer-column {
+        text-align: center; /* Center text for each column */
+        margin-bottom: 30px; /* Increase space between columns */
+    }
+
+    .footer h4 {
+        font-size: 1.1em; /* Adjust heading size */
+    }
+
+    .footer p, .footer a {
+        font-size: 0.85em;
+    }
+}
+<<<<<<< HEAD
+.contact-section .email-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .email-button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+=======
+>>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
