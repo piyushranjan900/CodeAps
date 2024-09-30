@@ -5,16 +5,12 @@ import Piyush from '../assets/images/piyush.jpg';
 import Sandhya from '../assets/images/sandhya.jpg';
 import Sidd from '../assets/images/siddhat.jpg';
 import './About.css';
-import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 interface TeamMember {
   name: string;
   position: string;
   description: string;
   imageUrl: string;
-  instagramUrl?: string;
-  facebookUrl?: string;
-  whatsappUrl?: string;
 }
 
 const AboutUs: React.FC = () => {
@@ -25,9 +21,6 @@ const AboutUs: React.FC = () => {
       description:
         'Ashish manages operations, ensuring the delivery of high-quality web and app solutions that meet client needs and expectations.',
       imageUrl: Ashish,
-      instagramUrl: 'https://instagram.com/ashish_choudhary._',
-      facebookUrl: 'https://facebook.com/ashish',
-      whatsappUrl: 'https://wa.me/6200604080',
     },
     {
       name: 'Siddhant Aryan',
@@ -35,9 +28,6 @@ const AboutUs: React.FC = () => {
       description:
         'Siddhant is a Frontend Developer specializing in creating responsive web and mobile applications using modern front-end technologies and frameworks.',
       imageUrl: Sidd,
-      instagramUrl: 'https://instagram.com/siddhantaryan',
-      facebookUrl: 'https://facebook.com/siddhant.world',
-      whatsappUrl: 'https://wa.me/7667312470',
     },
     {
       name: 'Piyush Ranjan',
@@ -45,9 +35,6 @@ const AboutUs: React.FC = () => {
       description:
         'Piyush leads marketing efforts, focusing on user-centered design to create beautiful and functional digital experiences.',
       imageUrl: Piyush,
-      instagramUrl: 'https://instagram.com/piyush._.ranjan',
-      facebookUrl: 'https://facebook.com/piyush._.ranjan',
-      whatsappUrl: 'https://wa.me/9608674820',
     },
     {
       name: 'Chandan Kumar',
@@ -55,9 +42,6 @@ const AboutUs: React.FC = () => {
       description:
         'Chandan oversees server-side development, ensuring applications are fast, reliable, and secure, providing a solid foundation for user experiences.',
       imageUrl: 'https://img.freepik.com/premium-photo/indian-man-old-senior-old-male-generate-ai_98402-85630.jpg',
-      instagramUrl: 'https://instagram.com/chandan',
-      facebookUrl: 'https://facebook.com/chandan',
-      whatsappUrl: 'https://wa.me/1234567893',
     },
     {
       name: 'Sandhya Amrit',
@@ -65,9 +49,6 @@ const AboutUs: React.FC = () => {
       description:
         'Sandhya ensures quality by rigorously testing and debugging applications, guaranteeing they meet high standards before release for optimal performance.',
       imageUrl: Sandhya,
-      instagramUrl: 'https://instagram.com/sandhya',
-      facebookUrl: 'https://facebook.com/sandhya',
-      whatsappUrl: 'https://wa.me/1234567894',
     },
     {
       name: 'Khushi Kumari',
@@ -75,9 +56,6 @@ const AboutUs: React.FC = () => {
       description:
         'Khushi is an Android Developer focused on building innovative, user-friendly mobile applications with seamless performance and intuitive design.',
       imageUrl: Khushi,
-      instagramUrl: 'https://instagram.com/sandhya',
-      facebookUrl: 'https://facebook.com/sandhya',
-      whatsappUrl: 'https://wa.me/1234567894',
     },
   ];
 
@@ -91,7 +69,12 @@ const AboutUs: React.FC = () => {
     return () => clearInterval(intervalId);
   }, [teamMembers.length]);
 
-  const visibleTeamMembers = teamMembers.slice(currentSlide, currentSlide + 3);
+  // Ensure 3 members are always visible, even when looping back to the start
+  const visibleTeamMembers = [
+    teamMembers[currentSlide],
+    teamMembers[(currentSlide + 1) % teamMembers.length],
+    teamMembers[(currentSlide + 2) % teamMembers.length],
+  ];
 
   return (
     <div className="about-us">
@@ -115,23 +98,7 @@ const AboutUs: React.FC = () => {
               <h3>{member.name}</h3>
               <p><strong>{member.position}</strong></p>
               <p>{member.description}</p>
-              <div className="social-links">
-                {member.instagramUrl && (
-                  <a href={member.instagramUrl} target="_blank" rel="noopener noreferrer" className="social-icon">
-                    <FaInstagram size="2em" color="#E1306C" />
-                  </a>
-                )}
-                {member.facebookUrl && (
-                  <a href={member.facebookUrl} target="_blank" rel="noopener noreferrer" className="social-icon">
-                    <FaFacebook size="2em" color="#1877F2" />
-                  </a>
-                )}
-                {member.whatsappUrl && (
-                  <a href={member.whatsappUrl} target="_blank" rel="noopener noreferrer" className="social-icon">
-                    <FaWhatsapp size="2em" color="#25D366" />
-                  </a>
-                )}
-              </div>
+              {/* Social links removed */}
             </div>
           ))}
         </div>
@@ -161,20 +128,18 @@ const AboutUs: React.FC = () => {
       </section>
 
       <section className="contact-section">
-        <h2>Contact Us</h2>
-        <p>Interested in working with us? Feel free to reach out and learn how AspenCask Solution can help your business grow!</p>
-        <div className="social-media-links">
-          <a href="https://instagram.com/your_instagram" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaInstagram size="2em" color="#E1306C" />
-          </a>
-          <a href="https://facebook.com/your_facebook" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaFacebook size="2em" color="#1877F2" />
-          </a>
-          <a href="https://whatsapp.com/your_whatsapp" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaWhatsapp size="2em" color="#25D366" />
-          </a>
-        </div>
-      </section>
+  <h2>Contact Us</h2>
+  <p>
+    Interested in working with us? Feel free to reach out and learn how AspenCask Solution can help your business grow!
+  </p>
+
+  <div className="email-section">
+    <a href="mailto:info@aspencask.com" className="email-button">
+      Email Us
+    </a>
+  </div>
+</section>
+
     </div>
   );
 };

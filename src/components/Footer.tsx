@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/companylogo.png';
+import logo from '../assets/images/acS1.png';
 import './Footer.css'; // Make sure to create this file for your styles
 
 const Footer: React.FC = () => {
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <img src={logo} alt="Company Logo" />
           <address>
             <p>Raj bagh, Ghaziyabad, uttarpradesh</p>
-            <p>ashish.cliqtech@gmail.com</p>
+            <p>apencask@gmail.com</p>
           </address>
         </div>
         
