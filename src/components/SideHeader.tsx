@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom'; // Import useLocation for active link handling
-<<<<<<< HEAD
 import comlogo from '../assets/images/acS1.png';
-=======
-import comlogo from '../assets/images/companylogo.png';
->>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
 import './SideHeader.css';
 
 const SideHeader: React.FC = () => {

@@ -46,11 +46,8 @@
     position: relative;
     font-size: 4rem;
     font-weight: bold;
-<<<<<<< HEAD
     background: linear-gradient(90deg, #e46d50, #e39960);
-=======
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
->>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;

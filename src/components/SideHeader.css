@@ -147,7 +147,6 @@
 }
 
 /* Logo container */
-<<<<<<< HEAD
 .header-container {
   display: flex;
   align-items: center;
@@ -171,7 +170,7 @@
   font-size: 24px; /* Adjust the font size of the company name */
   color: #f0e4e4; /* Adjust the color as needed */
   margin-left: 10px; /* Add space between the logo and the text */
-=======
+}
 .logo {
   display: flex;
   align-items: center;
@@ -201,6 +200,5 @@
 
 .logo-link:hover {
   opacity: 0.8; /* Optional hover effect */
->>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
 }
 

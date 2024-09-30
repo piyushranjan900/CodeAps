@@ -154,7 +154,6 @@ const Home: React.FC = () => {
         <div className="testimonial-items">
           <div className="testimonial-item">
             <p>"AspenCask transformed our vision into reality."</p>
-<<<<<<< HEAD
             <span>- gurmeet Gandhi</span>
           </div>
           <div className="testimonial-item">
@@ -164,17 +163,6 @@ const Home: React.FC = () => {
           <div className="testimonial-item">
             <p>"Our go-to partner for development needs."</p>
             <span>- Sumit Kumar</span>
-=======
-            <span>- Client A</span>
-          </div>
-          <div className="testimonial-item">
-            <p>"Professional, timely, and highly skilled."</p>
-            <span>- Client B</span>
-          </div>
-          <div className="testimonial-item">
-            <p>"Our go-to partner for development needs."</p>
-            <span>- Client C</span>
->>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
           </div>
         </div>
       </section>

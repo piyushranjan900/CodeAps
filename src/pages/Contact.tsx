@@ -41,13 +41,8 @@ const Contact: React.FC = () => {
         <h2>Our Office</h2>
         <p>Raj Bagh, Ghaziabad</p>
         <p>Uttar Pradesh, 201005</p>
-<<<<<<< HEAD
         <p>Email: <a href="mailto:aspencask@gmail.com">aspencask@gmail.com</a></p>
         
-=======
-        <p>Email: <a href="mailto:ashish.cliqtech@gmail.com">ashish.cliqtech@gmail.com</a></p>
-        <p>Phone: <a href="tel:+916200604080">+91 6200604080</a></p>
->>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
       </div>
 
       <div className="additional-info">
@@ -64,17 +59,10 @@ const Contact: React.FC = () => {
         <h2>Follow Us</h2>
         <p>Stay updated with our latest projects and offers:</p>
         <ul>
-<<<<<<< HEAD
           <li><a href="https://www.facebook.com/profile.php?id=61566376989450&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
           <li><a href="https://www.linkedin.com/in/aspencask-solution-449320330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/aspencask/profilecard/?igsh=N3UyeHBqZjBmaDM2" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-=======
-          <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-          <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
->>>>>>> 94e03ece0fb8dd551296e0dd0da3d2e51518a523
         </ul>
       </div>
     </div>
